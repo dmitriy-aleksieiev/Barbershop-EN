@@ -22,16 +22,16 @@
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item">
-            <a class="header__link" href="">About</a>
+            <a class="header__link" href="#about">About</a>
           </li>
           <li class="header__item">
-            <a class="header__link" href="">Services and prices</a>
+            <a class="header__link" href="#price">Services and prices</a>
           </li>
           <li class="header__item">
             <a class="header__link" href="">Barbers</a>
           </li>
           <li class="header__item">
-            <a class="header__link" href="">Contacts</a>
+            <a class="header__link" href="#contacts">Contacts</a>
           </li>
         </ul>
       </nav>
@@ -84,7 +84,7 @@
       </section>
 
       <!-- About section -->
-      <section class="about">
+      <section class="about" id="about">
         <ul class="abouti__list">
           <li class="about__item">
             <img
@@ -122,7 +122,7 @@
       </section>
 
       <!-- Price Section -->
-      <section class="price">
+      <section class="price" id="price">
         <p class="general-uppertitle">spend your time with the best masters</p>
         <h2 class="main-title">Services and prices</h2>
 
@@ -155,15 +155,83 @@
         <button class="main-btn">Online-booking</button>
       </section>
 
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+      <!-- Portfolio section -->
+      <section class="portfolio"></section>
+      <h2 hidden class="main-title">Gallery</h2>
+      <p class="general-uppertitle">for true enjoyers of the atmosphere</p>
+      <ul class="portfolio__list">
+        <li class="portfolio__item">
+          <img
+            src="./images/portfolio/gallery-img-1.jpg"
+            alt=""
+            class="portfolio__img"
+          />
+        </li>
+        <li class="portfolio__item">
+          <img
+            src="./images/portfolio/gallery-img-2.jpg"
+            alt=""
+            class="portfolio__img"
+          />
+        </li>
+        <li class="portfolio__item">
+          <img
+            src="./images/portfolio/gallery-img-3.jpg"
+            alt=""
+            class="portfolio__img"
+          />
+        </li>
+        <li class="portfolio__item">
+          <img
+            src="./images/portfolio/gallery-img-4.jpg"
+            alt=""
+            class="portfolio__img"
+          />
+        </li>
       </ul>
+
+      <!-- Contacts section -->
+      <section class="contacts" id="contacts">
+        <div>
+          <h2 class="main-title">Online-booking</h2>
+          <form action="">
+            <label for=""></label>
+            <input type="text" />
+          </form>
+        </div>
+        <div class="contacts-group">
+          <h2 class="main-title">Contacts</h2>
+          <address class="contacts-group__addres">
+            <ul contacts-group__list>
+              <li class="contacts-group__item">
+                <a
+                  class="contacts-group__link"
+                  href="https://goo.gl/maps/UH7dqAvUYqqxaKA49"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >st. Vasilkovaya, 7A Kiev, 08132</a
+                >
+              </li>
+              <li class="contacts-group__item">
+                <a class="contacts-group__link" href="tel:+380441111111"
+                  >+38 044 111 11 11</a
+                >
+              </li>
+              <li class="contacts-group__item">
+                <a
+                  class="contacts-group__link"
+                  href="mailto:barbershop@email.com"
+                  >barbershop@email.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <p class="general-uppertitle">working hours</p>
+          <p class="general-dscr">
+            Every day from <time datatime="09:00">9:00</time> to 22:00
+          </p>
+        </div>
+      </section>
     </main>
 
     <!-- footer -->
