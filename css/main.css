@@ -1,7 +1,11 @@
 .general-uppertitle {
-  color: tomato;
+  color: rgb(39, 51, 186);
 }
 
 .portfolio .general-uppertitle {
-  color: green;
+  color: rgb(122, 14, 14);
+}
+
+.barbers p {
+  color: darkorange;
 }/*# sourceMappingURL=main.css.map */
