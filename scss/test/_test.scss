@@ -2,8 +2,14 @@
     color: rgb(39, 51, 186);
 }
 
+// ПОТОМОК
 .portfolio .general-uppertitle {
     color: rgb(122, 14, 14)
+}
+
+// РЕБЕНОК
+.portfolio > general-uppertitle {
+    color: rgb(255, 99, 71)
 }
 
 .barbers p {
