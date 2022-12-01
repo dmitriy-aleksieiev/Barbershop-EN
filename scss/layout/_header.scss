@@ -1,0 +1,20 @@
+.header {
+  background-color: var(--dark-bg-color);
+}
+
+.header__link,
+.header__tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 0.1em;
+
+  color: var(--primary-light-color);
+}
+
+.header__link:hover,
+.header__link:focus,
+.header__tel:hover,
+.header__tel:focus {
+  color: var(--primary-accent-color);
+}

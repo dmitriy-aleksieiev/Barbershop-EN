@@ -1,0 +1,25 @@
+.main-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  background-color: var(--primary-accent-color);
+}
+
+.main-btn--dark {
+  color: var(--primary-light-color);
+}
+
+.main-btn--light {
+  color: var(--primary-dark-color);
+}

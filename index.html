@@ -21,13 +21,14 @@
     <!-- header -->
     <header class="header">
       <a class="logo" href="">
-        <img
-          class="logo__img"
-          src="./images/header/logo.png"
-          alt="barbershop logo"
+        <svg
+          class="logo__icon"
           width="69"
           height="56"
-        />
+          aria-label="Логотип BarberShop"
+        >
+          <use href="./images/icons/icons.svg#logo"></use>
+        </svg>
       </a>
 
       <nav class="header__nav">
@@ -46,8 +47,8 @@
           </li>
         </ul>
       </nav>
-      <a class="header-tel" href="tel:+380441111111">+38 044 111 11 11</a>
-      <button class="main-btn">Online-booking</button>
+      <a class="header__tel" href="tel:+380441111111">+38 044 111 11 11</a>
+      <button class="main-btn main-btn--dark">Online-booking</button>
     </header>
 
     <main>
@@ -73,11 +74,13 @@
             >
           </li>
         </ul>
-        <p class="general-uppertitle">A hair salon for men in Kyiv</p>
+        <p class="general-uppertitle general-uppertitle--light">
+          A hair salon for men in Kyiv
+        </p>
         <h1 class="hero-title">BarberShop</h1>
-        <p class="general-dscr">
-          We are experts in trendy men’s haircuts. We work quickly, carefully
-          and with style.
+        <p class="general-dscr general-dscr--light">
+          We are experts in trendy men’s haircuts. <br />We work quickly,
+          carefully and with style.
         </p>
         <div class="pagination">
           <div class="pagination__item"></div>
@@ -117,7 +120,7 @@
           </li>
         </ul>
         <p class="general-uppertitle">About</p>
-        <h2 class="main-title">Best Barbershop in your city</h2>
+        <h2 class="general-title">Best Barbershop in your city</h2>
         <p class="general-dscr">
           If you want to add more confidence to your image, you should
           definitely visit us.
@@ -135,7 +138,7 @@
       <!-- Price Section -->
       <section class="price section" id="price">
         <p class="general-uppertitle">spend your time with the best masters</p>
-        <h2 class="main-title">Services and prices</h2>
+        <h2 class="general-title">Services and prices</h2>
 
         <ul class="price_list">
           <li class="price__item">
@@ -188,7 +191,7 @@
 
         <div class="benefits__text-block">
           <p class="general-uppertitle">old traditional school</p>
-          <h2 class="main-title">Why people come to us?</h2>
+          <h2 class="general-title">Why people come to us?</h2>
           <p class="general-dscr">
             Only good things are said about us. But it's better to see and feel
             1 time than read 10 times.
@@ -199,9 +202,9 @@
       <!-- Barbers section -->
       <section class="barbers section">
         <p class="general-uppertitle">for true enjoyers of the atmosphere</p>
-        <h2 class="main-title">Our barbers</h2>
+        <h2 class="general-title">Our barbers</h2>
 
-        <ul>
+        <ul class="barbers__list">
           <!-- John Smith -->
           <li class="barbers__item">
             <img
@@ -391,7 +394,7 @@
 
       <!-- Portfolio section -->
       <section class="portfolio">
-        <h2 hidden class="main-title">Gallery</h2>
+        <h2 hidden class="general-title">Gallery</h2>
         <p class="general-uppertitle">for true enjoyers of the atmosphere</p>
         <ul class="portfolio__list">
           <li class="portfolio__item">
@@ -428,14 +431,14 @@
       <!-- Contacts section -->
       <section class="contacts section" id="contacts">
         <div>
-          <h2 class="main-title">Online-booking</h2>
+          <h2 class="general-title">Online-booking</h2>
           <form action="">
             <label for=""></label>
             <input type="text" />
           </form>
         </div>
         <div class="contacts-group">
-          <h2 class="main-title">Contacts</h2>
+          <h2 class="general-title">Contacts</h2>
           <address class="contacts-group__addres">
             <ul contacts-group__list>
               <li class="contacts-group__item">
