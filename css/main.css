@@ -1,11 +1,17 @@
-.general-uppertitle {
-  color: rgb(39, 51, 186);
+body {
+  font-family: var(--main-font);
 }
 
-.portfolio .general-uppertitle {
-  color: rgb(122, 14, 14);
+.main-title {
+  color: rgb(40, 7, 125);
 }
 
-.barbers p {
-  color: darkorange;
+:root {
+  --main-font: "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --primary-dark-color: rgba(48, 48, 48, 1);
+  --secondary-dark-color: rgba(85, 85, 85, 1);
+  --primary-light-color: rgba(255, 255, 255, 1);
+  --secondary-light-color: rgba(157, 164, 189, 1);
+  --primary-accent-color: rgba(255, 108, 0, 1);
 }/*# sourceMappingURL=main.css.map */

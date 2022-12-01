@@ -1,1 +1,24 @@
-@import './test/test'
+// base
+@import './base/base';
+@import './base/reset';
+@import './base/typography';
+@import './base/variables';
+
+// layout
+@import './layout/about';
+@import './layout/barbers';
+@import './layout/contacts';
+@import './layout/footer';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/nav';
+@import './layout/portfolio';
+@import './layout/price';
+
+// components
+@import './components/buttons';
+@import './components/sections-and-containers';
+
+// utils
+@import './utils/visually-hidden';
+
