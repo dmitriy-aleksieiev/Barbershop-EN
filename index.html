@@ -15,6 +15,13 @@
     />
     <!-- fonts end -->
 
+    <!-- modern normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+
+    <!-- my style -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -119,9 +126,11 @@
             />
           </li>
         </ul>
-        <p class="general-uppertitle">About</p>
-        <h2 class="general-title">Best Barbershop in your city</h2>
-        <p class="general-dscr">
+        <p class="general-uppertitle general-uppertitle--dark">About</p>
+        <h2 class="general-title general-title--dark">
+          Best Barbershop in your city
+        </h2>
+        <p class="general-dscr general-dscr--dark">
           If you want to add more confidence to your image, you should
           definitely visit us.
         </p>
@@ -132,13 +141,15 @@
           same wave" with clients. Therefore, we are always ready to improve
           everyone who comes to us!
         </p>
-        <button class="main-btn">Online-booking</button>
+        <button class="main-btn main-btn--light">Online-booking</button>
       </section>
 
       <!-- Price Section -->
       <section class="price section" id="price">
-        <p class="general-uppertitle">spend your time with the best masters</p>
-        <h2 class="general-title">Services and prices</h2>
+        <p class="general-uppertitle general-uppertitle--light">
+          spend your time with the best masters
+        </p>
+        <h2 class="general-title general-title--light">Services and prices</h2>
 
         <ul class="price_list">
           <li class="price__item">
@@ -166,25 +177,34 @@
             </ul>
           </li>
         </ul>
-        <button class="main-btn">Online-booking</button>
+        <button class="main-btn main-btn--dark">Online-booking</button>
       </section>
 
+      <!-- Benefits Section -->
       <section class="benefits section">
         <ul class="benefits__list">
           <li class="benefits__item">
-            <p class="benefits__quantity">600 <sup>&#43;</sup></p>
+            <p class="benefits__quantity">
+              600 <sup class="benefits__plus">&#43;</sup>
+            </p>
             <p class="benefits__description">Satisfied customers per day</p>
           </li>
           <li class="benefits__item">
-            <p class="benefits__quantity">50 <sup>&#43;</sup></p>
+            <p class="benefits__quantity">
+              50 <sup class="benefits__plus">&#43;</sup>
+            </p>
             <p class="benefits__description">Awards for excellent service</p>
           </li>
           <li class="benefits__item">
-            <p class="benefits__quantity">20 <sup>&#43;</sup></p>
+            <p class="benefits__quantity">
+              20 <sup class="benefits__plus">&#43;</sup>
+            </p>
             <p class="benefits__description">Kyiv’s best barbers</p>
           </li>
           <li class="benefits__item">
-            <p class="benefits__quantity">100 <sup>&#43;</sup></p>
+            <p class="benefits__quantity">
+              100 <sup class="benefits__plus">&#43;</sup>
+            </p>
             <p class="benefits__description">Gifts for regular customers</p>
           </li>
         </ul>
@@ -192,7 +212,7 @@
         <div class="benefits__text-block">
           <p class="general-uppertitle">old traditional school</p>
           <h2 class="general-title">Why people come to us?</h2>
-          <p class="general-dscr">
+          <p class="general-dscr general-dscr--dark">
             Only good things are said about us. But it's better to see and feel
             1 time than read 10 times.
           </p>
@@ -201,8 +221,10 @@
 
       <!-- Barbers section -->
       <section class="barbers section">
-        <p class="general-uppertitle">for true enjoyers of the atmosphere</p>
-        <h2 class="general-title">Our barbers</h2>
+        <p class="general-uppertitle general-uppertitle--dark">
+          for true enjoyers of the atmosphere
+        </p>
+        <h2 class="general-title general-title--dark">Our barbers</h2>
 
         <ul class="barbers__list">
           <!-- John Smith -->
@@ -214,7 +236,7 @@
               width="370"
             />
             <h3 class="barbers__name">John Smith</h3>
-            <p class="barbers description">Extreme Barber</p>
+            <p class="barbers__description">Extreme Barber</p>
             <ul class="barbers__social">
               <li class="barbers__social-item">
                 <a
@@ -223,7 +245,7 @@
                   rel="noreferref noopener"
                   aria-label="instagram"
                 >
-                  <svg width="20" height="20">
+                  <svg class="barbers__sm-icons" width="20" height="20">
                     <use href="./images/icons/icons.svg#instagram"></use>
                   </svg>
                 </a>
@@ -235,7 +257,7 @@
                   rel="noreferref noopener"
                   aria-label="twitter"
                 >
-                  <svg width="20" height="20">
+                  <svg class="barbers__sm-icons" width="20" height="20">
                     <use href="./images/icons/icons.svg#twitter"></use>
                   </svg>
                 </a>
@@ -247,7 +269,7 @@
                   rel="noreferref noopener"
                   aria-label="facebook"
                 >
-                  <svg width="20" height="20">
+                  <svg class="barbers__sm-icons" width="20" height="20">
                     <use href="./images/icons/icons.svg#facebook"></use>
                   </svg>
                 </a>
@@ -259,7 +281,7 @@
                   rel="noreferref noopener"
                   aria-label="linkedin"
                 >
-                  <svg width="20" height="20">
+                  <svg class="barbers__sm-icons" width="20" height="20">
                     <use href="./images/icons/icons.svg#linkedin"></use>
                   </svg>
                 </a>
@@ -276,7 +298,7 @@
               width="370"
             />
             <h3 class="barbers__name">Michele Doe</h3>
-            <p class="barbers description">Extreme Barber</p>
+            <p class="barbers__description">Extreme Barber</p>
             <ul class="barbers__social">
               <li class="barbers__social-item">
                 <a
@@ -285,7 +307,7 @@
                   rel="noreferref noopener"
                   aria-label="instagram"
                 >
-                  <svg width="20" height="20">
+                  <svg class="barbers__sm-icons" width="20" height="20">
                     <use href="./images/icons/icons.svg#instagram"></use>
                   </svg>
                 </a>
@@ -297,7 +319,7 @@
                   rel="noreferref noopener"
                   aria-label="twitter"
                 >
-                  <svg width="20" height="20">
+                  <svg class="barbers__sm-icons" width="20" height="20">
                     <use href="./images/icons/icons.svg#twitter"></use>
                   </svg>
                 </a>
@@ -309,7 +331,7 @@
                   rel="noreferref noopener"
                   aria-label="facebook"
                 >
-                  <svg width="20" height="20">
+                  <svg class="barbers__sm-icons" width="20" height="20">
                     <use href="./images/icons/icons.svg#facebook"></use>
                   </svg>
                 </a>
@@ -321,7 +343,7 @@
                   rel="noreferref noopener"
                   aria-label="linkedin"
                 >
-                  <svg width="20" height="20">
+                  <svg class="barbers__sm-icons" width="20" height="20">
                     <use href="./images/icons/icons.svg#linkedin"></use>
                   </svg>
                 </a>
@@ -337,7 +359,7 @@
               width="370"
             />
             <h3 class="barbers__name">Alan Black</h3>
-            <p class="barbers description">Extreme Barber</p>
+            <p class="barbers__description">Extreme Barber</p>
             <ul class="barbers__social">
               <li class="barbers__social-item">
                 <a
@@ -346,7 +368,7 @@
                   rel="noreferref noopener"
                   aria-label="instagram"
                 >
-                  <svg width="20" height="20">
+                  <svg class="barbers__sm-icons" width="20" height="20">
                     <use href="./images/icons/icons.svg#instagram"></use>
                   </svg>
                 </a>
@@ -358,7 +380,7 @@
                   rel="noreferref noopener"
                   aria-label="twitter"
                 >
-                  <svg width="20" height="20">
+                  <svg class="barbers__sm-icons" width="20" height="20">
                     <use href="./images/icons/icons.svg#twitter"></use>
                   </svg>
                 </a>
@@ -370,7 +392,7 @@
                   rel="noreferref noopener"
                   aria-label="facebook"
                 >
-                  <svg width="20" height="20">
+                  <svg class="barbers__sm-icons" width="20" height="20">
                     <use href="./images/icons/icons.svg#facebook"></use>
                   </svg>
                 </a>
@@ -382,7 +404,7 @@
                   rel="noreferref noopener"
                   aria-label="linkedin"
                 >
-                  <svg width="20" height="20">
+                  <svg class="barbers__sm-icons" width="20" height="20">
                     <use href="./images/icons/icons.svg#linkedin"></use>
                   </svg>
                 </a>
@@ -395,7 +417,9 @@
       <!-- Portfolio section -->
       <section class="portfolio">
         <h2 hidden class="general-title">Gallery</h2>
-        <p class="general-uppertitle">for true enjoyers of the atmosphere</p>
+        <p class="general-uppertitle general-uppertitle--dark">
+          for true enjoyers of the atmosphere
+        </p>
         <ul class="portfolio__list">
           <li class="portfolio__item">
             <img
@@ -431,14 +455,14 @@
       <!-- Contacts section -->
       <section class="contacts section" id="contacts">
         <div>
-          <h2 class="general-title">Online-booking</h2>
+          <h2 class="general-title general-title--light">Online-booking</h2>
           <form action="">
             <label for=""></label>
             <input type="text" />
           </form>
         </div>
         <div class="contacts-group">
-          <h2 class="general-title">Contacts</h2>
+          <h2 class="general-title general-title--light">Contacts</h2>
           <address class="contacts-group__addres">
             <ul contacts-group__list>
               <li class="contacts-group__item">
@@ -481,7 +505,7 @@
             >Instagram
           </a>
         </li>
-        <li class="sm__tem">
+        <li class="sm__item">
           <a class="sm__link" target="_blank" rel="noopener noreferrer" href=""
             >Youtube</a
           >

@@ -31,7 +31,7 @@
 }
 
 .general-uppertitle--dark {
-  color: var(--secondary-dark-color);
+  color: var(--primary-dark-color);
 }
 
 .general-uppertitle--light {
@@ -51,4 +51,65 @@
 
 .general-dscr--light {
   color: var(--secondary-light-color);
+}
+
+.general-text {
+  font-size: 14px;
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+  color: var(--secondary-dark-color);
+}
+
+.price__inner-item {
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-light-color);
+}
+
+// benefits block
+.benefits__quantity {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--primary-dark-color);
+}
+
+.benefits__description {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--primary-dark-color);
+}
+
+.benefits__plus {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--primary-accent-color);
+}
+
+// barbers block
+.barbers__name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--primary-dark-color);
+}
+
+.barbers__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--primary-accent-color);
 }
