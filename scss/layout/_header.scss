@@ -18,3 +18,25 @@
 .header__tel:focus {
   color: var(--primary-accent-color);
 }
+
+// Лого
+.header__logo {
+  margin-right: 70px;
+}
+
+// Навигация по странице
+.header__list {
+  display: flex;
+  gap: 30px;
+}
+
+// Телефон
+.header__tel {
+  margin-left: auto;
+  margin-right: 45px;
+}
+
+// Кнопка
+.header__main-btn {
+  margin-right: 9px;
+}
