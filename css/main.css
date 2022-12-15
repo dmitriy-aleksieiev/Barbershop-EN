@@ -197,6 +197,10 @@ button {
   margin-right: 70px;
 }
 
+.header__nav {
+  margin-right: auto;
+}
+
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,7 +209,6 @@ button {
 }
 
 .header__tel {
-  margin-left: auto;
   margin-right: 45px;
 }
 
@@ -270,8 +273,9 @@ button {
 
 .container {
   width: 1200px;
-  padding: 15px;
+  padding: 0 15px;
   margin: 0 auto;
+  outline: 1px lightblue solid;
 }
 
 .header-container {
@@ -296,4 +300,18 @@ button {
 .sm__link:hover,
 .sm__link:focus {
   color: var(--primary-accent-color);
+}
+
+.visuaaly-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
 }/*# sourceMappingURL=main.css.map */
