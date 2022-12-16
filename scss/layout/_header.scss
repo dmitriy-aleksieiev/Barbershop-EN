@@ -34,8 +34,15 @@
   gap: 30px;
 }
 
+.header__link {
+  display: inline-block;
+  padding: 52px 0;
+}
+
 // Телефон
 .header__tel {
+  display: inline-block;
+  padding: 52px 0;
   // margin-left: auto;
   margin-right: 45px;
 }

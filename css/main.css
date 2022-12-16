@@ -37,6 +37,15 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 .hero-title {
   font-family: var(--secondary-font);
   font-size: 72px;
@@ -160,6 +169,20 @@ button {
   --light-bg-color: rgba(247, 247, 247, 1);
 }
 
+.about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.abouti__left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin-right: 64px;
+}
+
 .barbers__sm-icons {
   fill: var(--primary-dark-color);
 }
@@ -208,7 +231,14 @@ button {
   gap: 30px;
 }
 
+.header__link {
+  display: inline-block;
+  padding: 52px 0;
+}
+
 .header__tel {
+  display: inline-block;
+  padding: 52px 0;
   margin-right: 45px;
 }
 
@@ -228,7 +258,9 @@ button {
   /* Позиционирование */
   /* Блочная модель */
   padding: 12px 20px;
-  height: 40px;
+  max-width: 200px;
+  min-width: 160px;
+  min-height: 40px;
   /* Типографика */
   font-weight: 600;
   font-size: 12px;
@@ -271,6 +303,11 @@ button {
   color: var(--primary-light-color);
 }
 
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -285,7 +322,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
 }
 
 .sm__link {

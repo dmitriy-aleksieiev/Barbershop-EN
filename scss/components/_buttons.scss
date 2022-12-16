@@ -3,7 +3,9 @@
 
   /* Блочная модель */
   padding: 12px 20px;
-  height: 40px;
+  max-width: 200px;
+  min-width: 160px;
+  min-height: 40px;
 
   /* Типографика */
   font-weight: 600;
