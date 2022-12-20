@@ -1,11 +1,13 @@
 .about__container {
   display: flex;
+  gap: 64px;
 }
 
-.abouti__left-side {
+.about__left-side {
   display: flex;
   gap: 30px;
-  margin-right: 64px;
+  // margin-right: 64px;
 }
 .about__right-side {
+  flex-basis: 500px;
 }

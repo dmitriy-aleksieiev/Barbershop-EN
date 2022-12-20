@@ -15,14 +15,18 @@
 }
 
 .general-title--dark {
+  margin-bottom: 20px;
   color: var(--primary-dark-color);
 }
 
 .general-title--light {
+  margin-bottom: 44px;
   color: var(--primary-light-color);
 }
 
 .general-uppertitle {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: 1.4;
@@ -39,6 +43,8 @@
 }
 
 .general-dscr {
+  margin-bottom: 20px;
+
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -54,8 +60,10 @@
 }
 
 .general-text {
+  margin-bottom: 40px;
+
   font-size: 14px;
-  line-height: 1.9;
+  line-height: 1.86;
   letter-spacing: 0.02em;
   color: var(--secondary-dark-color);
 }
@@ -96,6 +104,8 @@
 
 // barbers block
 .barbers__name {
+  margin-bottom: 8px;
+
   font-weight: 400;
   font-size: 18px;
   line-height: 1.4;

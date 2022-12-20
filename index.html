@@ -24,6 +24,12 @@
     <!-- my style -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
+
+  <!--
+  |==============================
+  | BODY
+  |==============================
+-->
   <body>
     <!-- header -->
     <header class="header">
@@ -115,7 +121,7 @@
       <!-- About section -->
       <section class="about section" id="about">
         <div class="container about__container">
-          <ul class="abouti__left-side">
+          <ul class="about__left-side">
             <li class="about__item">
               <img
                 class="about__image"
@@ -166,7 +172,7 @@
             Services and prices
           </h2>
 
-          <ul class="price_list">
+          <ul class="price__list">
             <li class="price__item">
               <ul class="price__inner-list">
                 <li class="price__inner-item">Beard trim from 300 uah.</li>
@@ -194,7 +200,9 @@
               </ul>
             </li>
           </ul>
-          <button class="main-btn main-btn--dark">Online-booking</button>
+          <button class="main-btn main-btn--dark main-btn--center">
+            Online-booking
+          </button>
         </div>
       </section>
 
@@ -229,8 +237,12 @@
           </ul>
 
           <div class="benefits__text-block">
-            <p class="general-uppertitle">old traditional school</p>
-            <h2 class="general-title">Why people come to us?</h2>
+            <p class="general-uppertitle general-uppertitle--dark">
+              old traditional school
+            </p>
+            <h2 class="general-title general-title--dark">
+              Why people come to us?
+            </h2>
             <p class="general-dscr general-dscr--dark">
               Only good things are said about us. But it's better to see and
               feel 1 time than read 10 times.
@@ -247,7 +259,7 @@
           </p>
           <h2 class="general-title general-title--dark">Our barbers</h2>
 
-          <ul class="barbers__list">
+          <ul class="barbers__cards">
             <!-- John Smith -->
             <li class="barbers__item">
               <img
@@ -256,8 +268,11 @@
                 class="barbers__photo"
                 width="370"
               />
-              <h3 class="barbers__name">John Smith</h3>
-              <p class="barbers__description">Extreme Barber</p>
+              <div class="barbers__name-wrapper">
+                <h3 class="barbers__name">John Smith</h3>
+                <p class="barbers__description">Extreme Barber</p>
+              </div>
+
               <ul class="barbers__social">
                 <li class="barbers__social-item">
                   <a
@@ -318,8 +333,10 @@
                 class="barbers__photo"
                 width="370"
               />
-              <h3 class="barbers__name">Michele Doe</h3>
-              <p class="barbers__description">Extreme Barber</p>
+              <div class="barbers__name-wrapper">
+                <h3 class="barbers__name">Michele Doe</h3>
+                <p class="barbers__description">Extreme Barber</p>
+              </div>
               <ul class="barbers__social">
                 <li class="barbers__social-item">
                   <a
@@ -379,8 +396,10 @@
                 class="barbers__photo"
                 width="370"
               />
-              <h3 class="barbers__name">Alan Black</h3>
-              <p class="barbers__description">Extreme Barber</p>
+              <div class="barbers__name-wrapper">
+                <h3 class="barbers__name">Alan Black</h3>
+                <p class="barbers__description">Extreme Barber</p>
+              </div>
               <ul class="barbers__social">
                 <li class="barbers__social-item">
                   <a

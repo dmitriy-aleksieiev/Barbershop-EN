@@ -1,3 +1,29 @@
+.barbers__cards {
+  display: flex;
+
+  gap: 30px;
+}
+
+.barbers__item {
+  // не работает ((
+  flex-basis: calc((100% - 30px * 2) / 3);
+}
+
+.barbers__photo {
+  margin: 0 auto;
+}
+
+.barbers__name-wrapper {
+  padding: 30px 0;
+}
+
+// SocialMedia barbers
+.barbers__social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 .barbers__sm-icons {
   fill: var(--primary-dark-color);
 }
