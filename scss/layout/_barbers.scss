@@ -1,11 +1,9 @@
 .barbers__cards {
   display: flex;
-
   gap: 30px;
 }
 
 .barbers__item {
-  // не работает ((
   flex-basis: calc((100% - 30px * 2) / 3);
 }
 

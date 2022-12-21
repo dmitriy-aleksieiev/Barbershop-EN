@@ -1,0 +1,12 @@
+.portfolio__list {
+  display: flex;
+  gap: 30px;
+}
+
+.portfolio__item {
+  flex-basis: calc((100% - 30px * 2) / 3);
+}
+
+.portfolio__img {
+  margin: 0 auto;
+}

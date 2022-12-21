@@ -456,8 +456,8 @@
       </section>
 
       <!-- Portfolio section -->
-      <section class="portfolio">
-        <div class="container">
+      <section class="portfolio section">
+        <div class="container portfolio__container">
           <h2 hidden class="general-title">Gallery</h2>
           <p class="general-uppertitle general-uppertitle--dark">
             for true enjoyers of the atmosphere
@@ -468,6 +468,7 @@
                 src="./images/portfolio/portfolio-01@1x_lg.jpg"
                 alt=""
                 class="portfolio__img"
+                width="270"
               />
             </li>
             <li class="portfolio__item">
@@ -475,6 +476,7 @@
                 src="./images/portfolio/portfolio-02@1x_lg.jpg"
                 alt=""
                 class="portfolio__img"
+                width="270"
               />
             </li>
             <li class="portfolio__item">
@@ -482,6 +484,7 @@
                 src="./images/portfolio/portfolio-03@1x_lg.jpg"
                 alt=""
                 class="portfolio__img"
+                width="270"
               />
             </li>
             <li class="portfolio__item">
@@ -489,6 +492,7 @@
                 src="./images/portfolio/portfolio-04@1x_lg.jpg"
                 alt=""
                 class="portfolio__img"
+                width="270"
               />
             </li>
           </ul>
@@ -498,14 +502,28 @@
       <!-- Contacts section -->
       <section class="contacts section" id="contacts">
         <div class="container contacts__container">
-          <div>
+          <div class="contacts__left-side">
             <h2 class="general-title general-title--light">Online-booking</h2>
             <form action="">
               <label for=""></label>
               <input type="text" />
             </form>
+
+            <form action="">
+              <label for=""></label>
+              <input type="text" />
+            </form>
+
+            <form action="">
+              <label for=""></label>
+              <input type="text" />
+            </form>
+
+            <button class="main-btn main-btn--dark contacts__main-btn">
+              send
+            </button>
           </div>
-          <div class="contacts-group">
+          <div class="contacts__right-side">
             <h2 class="general-title general-title--light">Contacts</h2>
             <address class="contacts-group__addres">
               <ul contacts-group__list>
@@ -515,7 +533,12 @@
                     href="https://goo.gl/maps/UH7dqAvUYqqxaKA49"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >st. Vasilkovaya, 7A Kiev, 08132</a
+                  >
+                    <svg class="address-icon" width="24" height="24">
+                      <use href="./images/icons/icons.svg#linkedin"></use>
+                    </svg>
+
+                    st. Vasilkovaya, 7A <br />Kiev, 08132</a
                   >
                 </li>
                 <li class="contacts-group__item">
@@ -532,8 +555,10 @@
                 </li>
               </ul>
             </address>
-            <p class="general-uppertitle">working hours</p>
-            <p class="general-dscr">
+            <p class="general-uppertitle general-uppertitle--light">
+              working hours
+            </p>
+            <p class="general-dscr general-dscr--light">
               Every day from <time datatime="09:00">9:00</time> to 22:00
             </p>
           </div>
