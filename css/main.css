@@ -271,7 +271,7 @@ img {
 }
 
 .address-icon {
-  color: var(--secondary-light-color);
+  fill: var(--secondary-light-color);
 }
 
 .footer {
