@@ -1,3 +1,12 @@
 .hero {
-  background-color: var(--dark-bg-color);
+  height: 680px;
+  // background-color: var(--dark-bg-color);
+  max-width: 1280px;
+  margin: 0 auto;
+
+  background-image: url(/images/hero/hero-bg@1x_lg.jpg),
+    linear-gradient(to right, #ffffff 153px, var(--dark-bg-color) 153px);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
 }

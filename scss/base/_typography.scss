@@ -25,6 +25,9 @@
 }
 
 .general-uppertitle {
+  display: flex;
+  align-items: center;
+
   margin-bottom: 20px;
 
   font-weight: 600;
@@ -38,8 +41,24 @@
   color: var(--primary-dark-color);
 }
 
+.general-uppertitle--dark::before {
+  background-color: var(--primary-dark-color);
+}
+
 .general-uppertitle--light {
   color: var(--secondary-light-color);
+}
+
+.general-uppertitle--light::before {
+  background-color: var(--secondary-light-color);
+}
+
+.general-uppertitle::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
 }
 
 .general-dscr {
@@ -78,12 +97,24 @@
 
 // benefits block
 .benefits__quantity {
+  display: flex;
+  align-items: flex-start;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.4;
   text-align: center;
   letter-spacing: 0.05em;
   color: var(--primary-dark-color);
+}
+
+.benefits__quantity::after {
+  content: "\002B";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+
+  text-align: center;
+  color: var(--primary-accent-color);
 }
 
 .benefits__description {

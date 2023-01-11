@@ -73,6 +73,12 @@ img {
 }
 
 .general-uppertitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
@@ -85,8 +91,24 @@ img {
   color: var(--primary-dark-color);
 }
 
+.general-uppertitle--dark::before {
+  background-color: var(--primary-dark-color);
+}
+
 .general-uppertitle--light {
   color: var(--secondary-light-color);
+}
+
+.general-uppertitle--light::before {
+  background-color: var(--secondary-light-color);
+}
+
+.general-uppertitle::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
 }
 
 .general-dscr {
@@ -121,12 +143,27 @@ img {
 }
 
 .benefits__quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.4;
   text-align: center;
   letter-spacing: 0.05em;
   color: var(--primary-dark-color);
+}
+
+.benefits__quantity::after {
+  content: "+";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.375;
+  text-align: center;
+  color: var(--primary-accent-color);
 }
 
 .benefits__description {
@@ -241,21 +278,33 @@ img {
 }
 
 .contacts {
+  max-width: 1280px;
+  margin: 0 auto;
   background-color: var(--dark-bg-color);
+  background-image: url(../images/contacts/contacts-bg@1x_lg.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .contacts__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .contacts__left-side {
   padding: 0 40px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .contacts__right-side {
   padding: 0 100px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .contacts-group__link {
@@ -346,7 +395,13 @@ img {
 }
 
 .hero {
-  background-color: var(--dark-bg-color);
+  height: 680px;
+  max-width: 1280px;
+  margin: 0 auto;
+  background-image: url(/images/hero/hero-bg@1x_lg.jpg), linear-gradient(to right, #ffffff 153px, var(--dark-bg-color) 153px);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
 }
 
 .portfolio__list {
@@ -366,7 +421,13 @@ img {
 }
 
 .price {
+  max-width: 1280px;
+  margin: 0 auto;
   background-color: var(--dark-bg-color);
+  background-image: url(../images/price/price-bg@1x_lg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .price__list {
@@ -380,6 +441,16 @@ img {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding: 30px 40px;
+}
+
+.price__item:nth-child(1) {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
+  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.price__item:nth-child(2) {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#090b13), to(rgba(9, 11, 19, 0.2)));
+  background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
 .price__inner-list {

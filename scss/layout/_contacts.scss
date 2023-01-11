@@ -1,17 +1,26 @@
 .contacts {
+  max-width: 1280px;
+  margin: 0 auto;
   background-color: var(--dark-bg-color);
+  background-image: url(../images/contacts/contacts-bg@1x_lg.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .contacts__container {
   display: flex;
+  flex-basis: 50%;
 }
 
 .contacts__left-side {
   padding: 0 40px;
+  flex-basis: 50%;
 }
 
 .contacts__right-side {
   padding: 0 100px;
+  flex-basis: 50%;
 }
 
 .contacts-group__link {
