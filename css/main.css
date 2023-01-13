@@ -52,7 +52,7 @@ img {
   font-size: 72px;
   line-height: 1.1805555556;
   letter-spacing: 0.05em;
-  color: var(--primary-light-color);
+  color: olivedrab;
 }
 
 .general-title {
@@ -211,6 +211,34 @@ img {
   --primary-accent-color: rgba(255, 108, 0, 1);
   --dark-bg-color: rgba(25, 28, 38, 1);
   --light-bg-color: rgba(247, 247, 247, 1);
+}
+
+.test__container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: bisque;
+}
+
+.test__container::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  opacity: 1;
+  background-color: brown;
+}
+
+.test__item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: rgb(66, 167, 41);
 }
 
 .about__container {
