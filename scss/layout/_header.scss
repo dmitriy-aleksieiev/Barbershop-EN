@@ -1,5 +1,13 @@
 .header {
-  background-color: var(--dark-bg-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  opacity: 0;
+
+  // background-color: var(--dark-bg-color);
 }
 
 .header__link,

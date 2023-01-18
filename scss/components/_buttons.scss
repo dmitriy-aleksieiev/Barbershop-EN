@@ -42,21 +42,3 @@
   display: block;
   margin: 0 auto;
 }
-
-// SLIDER - BTN
-.slider-controls__btn {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.4;
-  letter-spacing: 0.1em;
-
-  color: var(--secondary-light-color);
-  background-color: transparent;
-
-  border: none;
-}
-
-.slider-controls__btn:hover,
-.slider-controls__btn:focus {
-  color: var(--primary-light-color);
-}

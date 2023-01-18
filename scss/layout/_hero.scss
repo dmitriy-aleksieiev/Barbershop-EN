@@ -1,12 +1,91 @@
 .hero {
-  height: 680px;
+  // height: 680px;
   // background-color: var(--dark-bg-color);
   max-width: 1280px;
   margin: 0 auto;
+}
+
+.hero__container {
+  display: flex;
 
   background-image: url(/images/hero/hero-bg@1x_lg.jpg),
     linear-gradient(to right, #ffffff 153px, var(--dark-bg-color) 153px);
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
+}
+
+.hero__left-side {
+  flex-basis: 98px;
+}
+
+.hero__right-side {
+  position: relative;
+  flex-grow: 1;
+  padding: 272px 0 206px 100px;
+}
+
+// SLIDER - BTN
+.slider-controls {
+  position: absolute;
+  right: 30px;
+  bottom: 40px;
+
+  display: flex;
+  gap: 22px;
+}
+
+.slider-controls__btn {
+  width: 60px;
+  text-align: left;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+
+  color: var(--secondary-light-color);
+  background-color: transparent;
+
+  border: none;
+  border-bottom: 1px solid var(--secondary-light-color);
+
+  padding: 0;
+  padding-bottom: 8px;
+}
+
+.slider-controls__btn:hover,
+.slider-controls__btn:focus {
+  color: var(--primary-light-color);
+  border-bottom: 1px solid var(--primary-light-color);
+}
+
+.slider-controls__btn.enabled {
+  color: var(--primary-light-color);
+  border-bottom: 1px solid var(--primary-light-color);
+  text-align: right;
+}
+
+.pagination {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.pagination__item {
+  width: 8px;
+  height: 2px;
+  background-color: var(--secondary-light-color);
+
+  // margin-bottom: 12px;
+}
+.pagination__item.enabled {
+  width: 18px;
+  // height: 2px;
+  background-color: var(--primary-light-color);
 }
