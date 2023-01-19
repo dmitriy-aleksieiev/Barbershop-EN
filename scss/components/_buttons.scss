@@ -23,6 +23,11 @@
 
   /* Прочее */
   cursor: pointer;
+
+  /* Трансформация */
+  transition-property: background-color;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
 }
 
 .main-btn:hover,

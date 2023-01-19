@@ -67,3 +67,57 @@
   // left: 50%;
   // transform: translate(-50%, -50%);
 }
+
+.opi-btn {
+  position: relative;
+  min-width: 100px;
+  min-height: 30px;
+  background-color: bisque;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px 10px 50px;
+  margin: 50px 500px;
+  overflow: hidden;
+
+  transition-property: background-color;
+  transition-duration: 2000ms;
+  transition-timing-function: linear;
+}
+
+.opi-btn:hover {
+  background-color: beige;
+}
+
+.opi-btn-1 {
+  position: absolute;
+  left: 20px;
+  transform: translate(0%, 0%);
+  transition-property: transform;
+  transition-duration: 1000ms;
+  transition-timing-function: linear;
+}
+
+.opi-btn-2 {
+  position: absolute;
+
+  left: 20px;
+  transform: translate(0%, 180%);
+
+  transition-property: transform;
+  transition-duration: 1000ms;
+  transition-timing-function: linear;
+}
+
+.opi-btn:hover .opi-btn-1 {
+  transform: translate(0%, -180%);
+  transition-property: transform;
+  transition-duration: 2000ms;
+  transition-timing-function: linear;
+}
+
+.opi-btn:hover .opi-btn-2 {
+  transform: translate(0%, 0%);
+  transition-property: transform;
+  transition-duration: 2000ms;
+  transition-timing-function: linear;
+}

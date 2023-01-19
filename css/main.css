@@ -253,6 +253,84 @@ img {
   padding: 15px;
 }
 
+.opi-btn {
+  position: relative;
+  min-width: 100px;
+  min-height: 30px;
+  background-color: bisque;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px 10px 50px;
+  margin: 50px 500px;
+  overflow: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 2000ms;
+          transition-duration: 2000ms;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+.opi-btn:hover {
+  background-color: beige;
+}
+
+.opi-btn-1 {
+  position: absolute;
+  left: 20px;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+.opi-btn-2 {
+  position: absolute;
+  left: 20px;
+  -webkit-transform: translate(0%, 180%);
+          transform: translate(0%, 180%);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+.opi-btn:hover .opi-btn-1 {
+  -webkit-transform: translate(0%, -180%);
+          transform: translate(0%, -180%);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 2000ms;
+          transition-duration: 2000ms;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
+.opi-btn:hover .opi-btn-2 {
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 2000ms;
+          transition-duration: 2000ms;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
 .about__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -616,6 +694,13 @@ img {
   border-radius: 25px;
   /* Прочее */
   cursor: pointer;
+  /* Трансформация */
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
 .main-btn:hover,
