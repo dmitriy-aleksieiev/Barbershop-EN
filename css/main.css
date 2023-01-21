@@ -238,10 +238,12 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1000;
 }
 
 .backdrop.is-hidden {
-  opacity: 1;
+  opacity: 0;
+  visibility: hidden;
   pointer-events: none;
 }
 
@@ -329,6 +331,10 @@ img {
           transition-duration: 2000ms;
   -webkit-transition-timing-function: linear;
           transition-timing-function: linear;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .about__container {
@@ -537,11 +543,6 @@ img {
   background-size: contain;
 }
 
-.hero__left-side {
-  -ms-flex-preferred-size: 98px;
-      flex-basis: 98px;
-}
-
 .hero__right-side {
   position: relative;
   -webkit-box-flex: 1;
@@ -613,6 +614,56 @@ img {
 .pagination__item.enabled {
   width: 18px;
   background-color: var(--primary-light-color);
+}
+
+/*
+  |==============================
+  | SocialMediaHero
+  |==============================
+*/
+.hero__left-side {
+  -ms-flex-preferred-size: 98px;
+      flex-basis: 98px;
+  position: relative;
+}
+
+.sm-list {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  outline: 1px solid blueviolet;
+}
+
+.sm-list::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: var(--primary-dark-color);
+}
+
+.sm__link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  letter-spacing: 0.2em;
+  color: var(--primary-dark-color);
+}
+
+.sm__link:hover,
+.sm__link:focus {
+  color: var(--primary-accent-color);
 }
 
 .portfolio__list {
@@ -740,26 +791,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.sm__link {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.4;
-  letter-spacing: 0.2em;
-  cursor: pointer;
-  color: var(--primary-dark-color);
-}
-
-.sm__link:hover,
-.sm__link:focus {
-  color: var(--primary-accent-color);
-}
-
-.sm-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .visuaaly-hidden {

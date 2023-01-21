@@ -30,7 +30,7 @@
   | BODY
   |==============================
 -->
-  <body>
+  <body ░ data-page>
     <!-- header -->
     <header class="header" ░ data-header>
       <div class="container header-container">
@@ -74,7 +74,7 @@
         <div class="container hero__container">
           <div class="hero__left-side">
             <ul class="sm-list">
-              <li class="sm__item">
+              <li class="sm__item stripe">
                 <a
                   class="sm__link"
                   target="_blank"
@@ -187,9 +187,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section>  -->
 
-      <div class="backdrop is-hidden">
+      <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
@@ -197,11 +197,11 @@
             maiores quaerat exercitationem dolor dicta atque ad quo quidem a
             eligendi tenetur necessitatibus!
           </p>
-          <button>Close</button>
+          <button type="button" data-modal-close>Close</button>
         </div>
-      </div> -->
+      </div>
 
-      <button class="opi-btn">
+      <button class="opi-btn" type="button" data-modal-open>
         <svg class="opi-btn-1" width="20" height="20">
           <use href="./images/icons/icons.svg#instagram"></use>
         </svg>
@@ -624,7 +624,10 @@
     <footer class="footer">
       <div class="container footer__container">
         <p class="footer__copyright">&#169; Copyright 2020</p>
-        <ul class="sm-list">
+
+        <!-- ВЕРНУТЬ !!! -->
+
+        <!-- <ul class="sm-list">
           <li class="sm__item">
             <a
               class="sm__link"
@@ -643,7 +646,7 @@
               >Youtube</a
             >
           </li>
-        </ul>
+        </ul> -->
       </div>
     </footer>
 
@@ -654,5 +657,7 @@
 -->
 
     <script src="./js/header-scroll.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
