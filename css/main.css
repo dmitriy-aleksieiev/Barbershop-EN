@@ -697,22 +697,55 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 50px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
 }
 
 .price__item {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding: 30px 40px;
+  cursor: pointer;
+}
+
+.price__item:nth-child(1):hover {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: -webkit-transform 1000ms linear;
+  transition: -webkit-transform 1000ms linear;
+  transition: transform 1000ms linear;
+  transition: transform 1000ms linear, -webkit-transform 1000ms linear;
+}
+
+.price__item:nth-child(2):hover {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: -webkit-transform 1000ms linear;
+  transition: -webkit-transform 1000ms linear;
+  transition: transform 1000ms linear;
+  transition: transform 1000ms linear, -webkit-transform 1000ms linear;
 }
 
 .price__item:nth-child(1) {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
   background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  -webkit-transform: rotateY(80deg);
+          transform: rotateY(80deg);
+  -webkit-transition: -webkit-transform 100000ms linear;
+  transition: -webkit-transform 100000ms linear;
+  transition: transform 100000ms linear;
+  transition: transform 100000ms linear, -webkit-transform 100000ms linear;
 }
 
 .price__item:nth-child(2) {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#090b13), to(rgba(9, 11, 19, 0.2)));
   background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  -webkit-transform: rotateY(-80deg);
+          transform: rotateY(-80deg);
+  -webkit-transition: -webkit-transform 100000ms linear;
+  transition: -webkit-transform 100000ms linear;
+  transition: transform 100000ms linear;
+  transition: transform 100000ms linear, -webkit-transform 100000ms linear;
 }
 
 .price__inner-list {
