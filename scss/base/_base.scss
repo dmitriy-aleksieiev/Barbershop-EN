@@ -9,3 +9,15 @@ body {
   font-family: var(--main-font);
   color: var(--primary-dark-color);
 }
+
+// Не работает с липким футером
+
+// html {
+//   margin-left: calc(100vw - 100%);
+//   margin-right: 0;
+// }
+
+// а вот этот способ работает. хотя вроде как и устарел
+html {
+  overflow-y: scroll;
+}

@@ -11,6 +11,10 @@ body {
   color: var(--primary-dark-color);
 }
 
+html {
+  overflow-y: scroll;
+}
+
 ul {
   list-style: none;
   margin: 0;
