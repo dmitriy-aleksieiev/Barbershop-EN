@@ -130,3 +130,22 @@
 .no-scroll {
   overflow: hidden;
 }
+
+/*
+  |==============================
+  | Modal Form
+  |==============================
+*/
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin: 20px 0;
+}
+
+.form-btn {
+  margin-right: auto;
+  min-width: 200px;
+}
