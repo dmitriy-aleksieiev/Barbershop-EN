@@ -341,6 +341,15 @@ img {
   overflow: hidden;
 }
 
+/*
+  |==============================
+  | 
+  |==============================
+*/
+.form-icons--correct {
+  fill: green;
+}
+
 .about__container {
   display: -webkit-box;
   display: -ms-flexbox;
