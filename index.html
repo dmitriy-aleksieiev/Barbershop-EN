@@ -536,11 +536,25 @@
             <h2 class="general-title general-title--light">Online-booking</h2>
             <form action="">
               <label for="">
-                NAME*
-                <input type="text" placeholder="Jack Black" required />
-                <svg class="form-icons--correct" width="20" height="20">
-                  <use href="./images/icons/icons.svg#correct"></use>
+                <span>NAME*</span>
+                <input
+                  type="text"
+                  placeholder="Jack Black"
+                  required
+                  minlength="3"
+                  title="Тайтл"
+                />
+                <svg width="20" height="20">
+                  <use
+                    class="form-icons--correct"
+                    href="./images/icons/icons.svg#correct"
+                  ></use>
+                  <use
+                    class="form-icons--incorrect"
+                    href="./images/icons/icons.svg#correct"
+                  ></use>
                 </svg>
+                <span>min 3</span>
               </label>
 
               <label for=""></label>

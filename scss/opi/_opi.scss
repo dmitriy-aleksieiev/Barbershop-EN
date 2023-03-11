@@ -138,5 +138,11 @@
 */
 
 .form-icons--correct {
+  opacity: 1;
   fill: green;
+}
+
+.form-icons--incorrect {
+  opacity: 0;
+  fill: red;
 }
